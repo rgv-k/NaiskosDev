@@ -1,17 +1,22 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "jira_service.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node jira_service.js",
+    "dev": "nodemon jira_service.js",
+    "test": "node jira_service.js --test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Backend server for Jira integration",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.11"
   }
 }
